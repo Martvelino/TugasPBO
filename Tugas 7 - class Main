@@ -1,0 +1,29 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+        PegawaiTetap p1 = new PegawaiTetap("Elra Rabeck", "3301359265457780", 9000000);
+        PegawaiTetap p2 = new PegawaiTetap("Deva Raka", "3101353377106380", 2000000);
+        PegawaiTetap p3 = new PegawaiTetap("Althaf Bagio", "31031332591341150", 5400000);
+        System.out.println(p1.toString());
+        System.out.println(p2.toString());
+        System.out.println(p3.toString());
+
+        PegawaiHarian ph1 = new PegawaiHarian("Muhammad Ferdy", "350720490324132992150", 8500, 40);
+        PegawaiHarian ph2 = new PegawaiHarian("Syafiq Noventa", "3507639874109844233820", 5000, 45);
+        PegawaiHarian ph3 = new PegawaiHarian("Ajeng Putri", "350756821403261902344", 30000, 30);
+        System.out.println(ph1.toString());
+        System.out.println(ph2.toString());
+        System.out.println(ph3.toString());
+
+        Sales s1 = new
+                Sales("Kurniawan Santika", "3507502744", 50, 50000);
+        Sales s2 = new
+                Sales("Ayu Ratih", "4432923654", 45, 60000);
+        Sales s3 = new
+                Sales("Lailatul Hidayahtullah", "4903328032", 90, 50000);
+        System.out.println(s1.toString());
+        System.out.println(s2.toString());
+        System.out.println(s3.toString());
+    }
+}
