@@ -1,0 +1,75 @@
+import java.util.Arrays;
+
+public class Main {
+    static Manusia manusia[] ;
+    static Mahasiswa mahasiswa[];
+    static Pekerja pekerja[];
+    static Manager manager[];
+
+    public static void main(String[] args) {
+        //Manusia
+        manusia = new Manusia[3];
+        System.out.println("Manusia ");
+        System.out.println("");
+        manusia[0] = new Manusia("Budi Supardi", "215150612331224",false, false);
+        manusia[1] = new Manusia("Bima Putra", "215154608090778",false, true);
+        manusia[2] = new Manusia("Frederico Manuel", "214322569866406",true, true);
+        System.out.println(manusia[0].toString());
+        System.out.println(manusia[1].toString());
+        System.out.println(manusia[2].toString());
+
+        //Mahasiswa
+        mahasiswa = new Mahasiswa[3];
+        System.out.println("Mahasiswa ");
+        System.out.println("");
+        mahasiswa[0] = new
+                Mahasiswa("205150600111002", 3.9, "Rafael Timoti","2151090787632",false,true);
+        mahasiswa[1] = new
+                Mahasiswa("195150200111002", 3.8, "Arif Susanto","2151324170640",false,false);
+        mahasiswa[2] = new
+                Mahasiswa("185150400111002", 4.0, "Nugraha Putra","21510911906070",true,true);
+        System.out.println(mahasiswa[0].toString());
+        System.out.println(mahasiswa[1].toString());
+        System.out.println(mahasiswa[2].toString());
+
+        //Pekerja
+        pekerja = new Pekerja[3];
+        System.out.println("Pekerja ");
+        System.out.println("");
+        pekerja[0] = new Pekerja(9, 28,
+                "215109128356","Muhammad Ivan","21512890170",true,true);
+        pekerja[1] = new Pekerja(9, 28,
+                "215101928465","Bayu Nugroho","2151654212080",false,true);
+        pekerja[2] = new Pekerja(9, 28,
+                "215116523416","Yudha Wijayanto","215101774534",true,false);
+        System.out.println(pekerja[0].toString());
+        System.out.println(pekerja[1].toString());
+        System.out.println(pekerja[2].toString());
+
+        //Manager
+        manager = new Manager[3];
+        System.out.println("Manager ");
+        System.out.println("");
+        manager[0] = new Manager(1000, 6, 30,
+                "2151019835","Richie Alvindo","215159435534",false,true);
+        manager[1] = new Manager(1500, 7,24,
+                "2151417238","Voice Valencia","215107884345",true,true);
+        manager[2] = new Manager(1450, 8,20,
+                "21510928365","Andhini Nur","215154208802",true,false);
+        System.out.println(manager[0].toString());
+        System.out.println(manager[1].toString());
+        System.out.println(manager[2].toString());
+
+        //Jumlah
+        System.out.println("Total ");
+        System.out.println("");
+        System.out.println("Jumlah Manusia : " +
+                manusia.length);
+        System.out.println("Jumlah Mahasiswa : " +
+                mahasiswa.length);
+        System.out.println("Jumlah Pekerja : " +
+                pekerja.length);
+        System.out.println("Jumlah Manager : " +
+                manager.length);
+    }
+}
